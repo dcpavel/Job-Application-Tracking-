@@ -34,12 +34,12 @@ describe('Utils', () => {
     });
   });
 
-  describe('removeButton', () => {
+  describe('hideElement', () => {
     it('should remove the submit button from the popup', () => {
       const buttonId = 'saveData';
       document.body.innerHTML = `<button id="${buttonId}"></button>`;
-      utils.removeButton('#' + buttonId);
-      expect(document.getElementById('saveData')).toBeNull();
+      utils.hideElement('#' + buttonId);
+      expect(document.getElementById('saveData').style.display).toBe('none');
     });
   });
 
