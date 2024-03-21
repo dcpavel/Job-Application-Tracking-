@@ -3,7 +3,7 @@
   "scripts": {
     "test": "jest",
     "build": "webpack",
-    "lint": "eslint . --quiet && prettier -w ."
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.23.3",
